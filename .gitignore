@@ -1,0 +1,29 @@
+# Build artifacts
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.lib
+*.exp
+*.idb
+*.suo
+*.user
+*.aps
+*.ncb
+*.sdf
+*.opensdf
+
+# Output directories
+bin/
+[Bb]uild/
+[Oo]ut/
+
+# .NET build output (legacy C# prototype under src/)
+obj/
+[Bb]in/
+*.dll
+
+# OS / editor
+Thumbs.db
+Desktop.ini
+.vs/

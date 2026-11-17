@@ -1,0 +1,2 @@
+using System; using System.IO; using WinInput.Shared;
+class ProtocolSelfTest { static void Main() { var ms=new MemoryStream(); Protocol.Write(ms,"1234567890123456","key","CTRL+F12"); ms.Position=0; var m=Protocol.Read(ms); if(m.Length!=3||m[0]!="1234567890123456"||m[1]!="key"||m[2]!="CTRL+F12") throw new Exception("protocol failed"); Console.WriteLine("OK"); } }
